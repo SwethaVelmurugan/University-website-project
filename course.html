@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href="style.css">
+   <!---- <link rel="preconnect" href="https://fonts.googleapis.com">   
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@200;300;400;600;700&display=swap" rel="stylesheet">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html"> HOME</a></li>
+                    <li><a href="about.html"> ABOUT</a></li>
+                    <li><a href="course.html"> COURSE</a></li>
+                    <li><a href="contact.html"> CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Courses</h1>
+
+    </section>
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <div class="row">
+            <div class="course-col">
+                <h3>Under Graduation</h3>
+                <ul>
+                    <li>B.Tech/B.E</li>
+                    <li>CSE</li>
+                    <li>IT</li>
+                    <li>EEE</li>
+                    <li>ECE</li>
+                    <li>Chemical</li>
+                    <li>Bio Medical</li>
+                    <li>Mechanical</li>
+                </ul>
+            </div>
+            <div class="course-col">
+                <h3>Post Graduation</h3>
+                <ul>
+                    <li>M.Tech/M.E</li>
+                    <li>CSE</li>
+                    <li>IT</li>
+                </ul>
+            </div>
+            <div class="course-col">
+                <h3>Arts</h3>
+                <ul>
+                    <li>B.Com</li>
+                    <li>B.Sc Computer Science</li>
+                    <li>B.Sc Zoology</li>
+                    <li>B.Sc Botony</li>
+                    <li>B.Sc Nutrition</li>
+                </ul>
+                
+            </div>
+        </div>
+
+    </section>
+   
+     
+    
+
+    <section class="footer">
+        <h3>About Us</h3>
+        <p>Edford University, established by Dr. Francis churchil, stand out as a premier centre of higher learning with a mission of pursuing excellence in education and research.<br>With their diverse and dynamic community of students, Edford offers a distinctive combination of some of the finest undergraduate, postgraduate and research programs,<br> accomplished faculty, world-class facilities and a residential campus set on a sprawling 230 acres of sylvan surroundings. </p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+
+        </div>
+    </section>
+    <script>
+        var navlinks=document.getElementById("navlinks");
+        function hideMenu()
+        {
+            navlinks.style.right="-200px";
+        }
+
+        function showMenu()
+        {
+            navlinks.style.right="0";
+        }
+    </script>
+
+</body>
+</html>
